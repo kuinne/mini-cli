@@ -5,7 +5,7 @@ const msg = require('fs')
 .trim()
 
 const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)(\(.+\))?: .{1,50}/
-
+console.log('test');
 if (!commitRE.test(msg)) {
     console.log()
     console.error(
